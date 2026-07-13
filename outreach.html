@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Outreach · Sihan Zhou</title>
   <meta name="description" content="Outreach, invited talks, events, and knowledge transfer activities of Sihan Zhou." />
-  <link rel="stylesheet" href="assets/style.css?v=11" />
+  <link rel="stylesheet" href="assets/style.css?v=13" />
 </head>
 <body class="page-service">
 <header class="site-header">
@@ -13,55 +13,159 @@
     <div class="brand">
       <a href="index.html">Sihan Zhou</a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>
-      <a class="active" href="outreach.html">Outreach</a>
-      <a href="service.html">Service</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-top" href="index.html">Home</a>
+      <div class="nav-group">
+        <a class="nav-top" href="research.html">Research</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Research menu"></button>
+        <div class="dropdown-menu">
+          <a href="research.html#projects-grants">Projects &amp; Grants</a>
+          <a href="research.html#invited-presentations-talks">Invited Conference Presentations &amp; Talks</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="publications.html">Publications</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Publications menu"></button>
+        <div class="dropdown-menu">
+          <a href="publications.html#featured-publications">Featured High-impact Publications</a>
+          <a href="publications.html#selected-publications-by-topic">Selected Publications by Topic</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="teaching.html">Teaching</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Teaching menu"></button>
+        <div class="dropdown-menu">
+          <a href="teaching.html#courses-teaching">Courses Teaching</a>
+          <a href="teaching.html#supervision">Supervision</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top active" href="outreach.html">Outreach</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Outreach menu"></button>
+        <div class="dropdown-menu">
+          <a href="outreach.html#knowledge-transfer">Knowledge Transfer</a>
+          <a href="outreach.html#event-organization">Event Organization</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="service.html">Service</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Service menu"></button>
+        <div class="dropdown-menu">
+          <a href="service.html#professional-roles">Professional Roles</a>
+          <a href="service.html#selected-external-services">Selected External Services</a>
+          <a href="service.html#selected-internal-services">Selected Internal Services</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section" id="knowledge-transfer">
     <div class="kicker">Outreach</div>
-    <h1>Academic events and knowledge transfer</h1>
-    <p class="lead">
-      Public-facing academic activities, invited talks, teacher development workshops, and symposium organisation.
-    </p>
-  </section>
-
-  <section class="section event-feature">
-    <div>
-      <div class="kicker">Academic event</div>
-      <h2>English-medium instruction in the era of GenAI</h2>
-      <p class="lead">An international symposium on negotiating tradition and modernity in English-medium instruction.</p>
-      <p>24 April 2026, Lecture Theatre 8, Yasumoto International Academic Park, CUHK.</p>
-      <a href="https://www.fed.cuhk.edu.hk/cri/emisymposium/" target="_blank" rel="noopener noreferrer">Symposium page</a>
-    </div>
-    <a href="https://www.fed.cuhk.edu.hk/cri/emisymposium/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/events/emi-symposium-2026.jpg" alt="Poster for English-medium instruction in the era of GenAI symposium">
-    </a>
-  </section>
-
-  <section class="section">
-    <h2>Selected outreach activities</h2>
+    <h1>Knowledge Transfer</h1>
     <div class="service-list">
-      <article class="service-card">
-        <h3>Professional development workshops</h3>
-        <p>Task-based assessment and assessment as learning workshops for school teachers from Guangdong Province, Centre for Language Education and Multiliteracies Research (CLEMR), CUHK.</p>
-      </article>
-      <article class="service-card">
-        <h3>Invited talks and professional presentations</h3>
-        <p>Invited talks at University of Oxford, University of Cambridge, Beijing Normal University, HK-SLARF, HAAL, and EMI-related symposia.</p>
-        <a href="publications.html">View talks and presentations</a>
-      </article>
-      <article class="service-card">
-        <h3>Knowledge transfer and language education</h3>
-        <p>Activities include teacher training, e-learning product development, writing competition adjudication, and organising EMI symposiums and events.</p>
-      </article>
+      <!-- TODO: Replace placeholder with the official Nanhai Experimental School page when confirmed. -->
+      <a class="service-card linked-card outreach-card" href="#" aria-label="Knowledge transfer entry: ELED Education Exchange with Nanhai Experimental School">
+        <span class="entry-date">2026</span>
+        <h3>ELED Education Exchange with Nanhai Experimental School</h3>
+        <p><em>Coordinator of the exchange trip.</em></p>
+        <p>Led and coordinated an exchange trip for ELED Year 2 students to Nanhai Experimental School in Foshan for teaching practicum and cultural exchange.</p>
+      </a>
+      <a class="service-card linked-card outreach-card" href="https://cuhkjc-aiforfuture.hk/index.php/en/home/" target="_blank" rel="noopener noreferrer" aria-label="Knowledge transfer entry: AI for the Future Project Commissioned by Jockey Club">
+        <span class="entry-date">2025&ndash;</span>
+        <h3>AI for the Future Project Commissioned by Jocky Club</h3>
+        <p><em>English subject expert.</em> (PI: Prof. Helen Mei Ling Meng)</p>
+        <p>Co-designed primary and secondary AI curricula for English subject with the Massachusetts Institute of Technology (MIT) team and school teachers in Hong Kong.</p>
+      </a>
+      <a class="service-card linked-card outreach-card" href="https://edu.gd.gov.cn/" target="_blank" rel="noopener noreferrer" aria-label="Knowledge transfer entry: Teacher Training Programs Commissioned by Guangdong Education Bureau">
+        <span class="entry-date">2023&ndash;2024</span>
+        <h3>Teacher Training Programs Commissioned by Guangdong Education Bureau</h3>
+        <p><em>Training workshop developer &amp; instructor.</em> (PI: Prof. Barry Bai)</p>
+        <p>Delivered professional development workshop on English language assessment for a total of 70+ primary and secondary school teachers from Guangdong Province, China.</p>
+      </a>
+      <!-- TODO: Replace placeholder with a dedicated talks archive or partner page when available. -->
+      <a class="service-card linked-card outreach-card" href="#" aria-label="Knowledge transfer entry: Academic Talks and Guest Lectures">
+        <span class="entry-date">2022&ndash;</span>
+        <h3>Academic Talks and Guest Lectures</h3>
+        <p><em>Host of international scholars for academic talks:</em></p>
+        <ul class="service-details">
+          <li><em>Corpus linguistics, AI and the future of language education.</em> Prof. Pascual Pérez-Paredes, Universidad de Murcia (June, 2026).</li>
+          <li>From polishing to participation: Practical approaches to teaching writer agency in the age of Generative AI. Prof. Jim McKinley, University College London (April, 2026).</li>
+          <li><em>Time and temporality in qualitative research: Current work and future directions for applied linguistics.</em> Dr. Nathan Thomas, University College London (April, 2026).</li>
+          <li><em>English Medium Instruction: Current trends and future directions.</em> Prof. Heath Rose, University of Oxford (November, 2024).</li>
+          <li><em>Bridging the Gap: Addressing concerns in the language teaching-research nexus through undergraduate studies.</em> Prof. Jim McKinley, University College London (November, 2024).</li>
+        </ul>
+        <p><em>Host of guest lecturers in taught courses:</em></p>
+        <ul class="service-details">
+          <li><em>GenAI for language assessment.</em> Guest lecture in ELED 4840 by Dr. David Woo, University of Hong Kong (February, 2026).</li>
+          <li><em>Integrating teacher, peer, and AI feedback in the writing classroom.</em> Guest lecture in TESL 6503 by Dr. Kai Guo, Chinese University of Hong Kong (March, 2026).</li>
+          <li><em>Assessment for content and language integrated learning.</em> Guest lecture in TESL 6503 by Dr. Daniel Fung, University of Hong Kong (April, 2026).</li>
+          <li><em>Assessment as learning &amp; the use of AI for language assessment.</em> Guest lecture in ELED 4840 by Dr. Bruce Li, SpeechX Limited. &amp; Ms. Iris Li, Chinese University of Hong Kong (February, 2025).</li>
+          <li><em>Assessment as learning &amp; the use of AI for language assessment.</em> Guest lecture in TESL 6503 by Dr. Bruce Li, SpeechX Limited. &amp; Ms. Iris Li, Chinese University of Hong Kong (March, 2025).</li>
+          <li><em>The ‘hidden’ curriculum in material design.</em> Guest lecture in PEDU 6111 by Prof. Heath Rose, University of Oxford (November, 2024).</li>
+          <li><em>Introducing innovations into ELT curriculum in Hong Kong schools.</em> Guest lecture in PEDU 6111 by Ms. Cindy Yin Mei Leung, S.K.H. Chan Young Secondary School &amp; Ms. Holly Ho, Good Hope School (December, 2024).</li>
+        </ul>
+      </a>
+      <a class="service-card linked-card outreach-card" href="https://www.ukri.org/councils/innovate-uk/" target="_blank" rel="noopener noreferrer" aria-label="Knowledge transfer entry: Digital English Learning Curriculum Commissioned by Innovate UK">
+        <span class="entry-date">2016&ndash;2018</span>
+        <h3>Digital English Learning Curriculum Commissioned by Innovate UK</h3>
+        <p><em>Knowledge Transfer Partnership Associate.</em> (PI: Prof. Nicola Galloway)</p>
+        <p>Liaised with University of Edinburgh and industry partner to develop a digital and game-based learning for a story-based English learning curriculum for young learners.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="event-organization">
+    <h2>Event Organization</h2>
+    <div class="service-list">
+      <!-- TODO: Replace placeholder with the event page when available. -->
+      <a class="service-card linked-card event-card" href="#" aria-label="Event organization entry: CUHK-UCL International Symposium">
+        <span class="entry-date">26/04/2026 · Hong Kong</span>
+        <h3><em>CUHK–UCL International Symposium (English-Medium Instruction in the era of GenAI: Negotiating tradition and modernity)</em></h3>
+        <p><strong>Chair of Organizing Committee</strong></p>
+        <p>Jointly hosted by the Department of Curriculum and Instruction (Chinese University of Hong Kong) and Institute of Education (University College London)</p>
+        <p>Keynote speakers: Prof. Glenn Stockwell, Prof. Angel Lin, Prof. Jim McKinley</p>
+      </a>
+      <!-- TODO: Replace placeholder with the event page when available. -->
+      <a class="service-card linked-card event-card" href="#" aria-label="Event organization entry: Hong Kong Second Language Acquisition Research Forum">
+        <span class="entry-date">09/05/2025 · Hong Kong</span>
+        <h3><em>Hong Kong Second Language Acquisition Research Forum</em></h3>
+        <p><strong>Co-Chair of Organizing Committee</strong></p>
+        <p>Jointly hosted by the Department of Curriculum and Instruction (Chinese University of Hong Kong) and School of Professional Education and Executive Development (The Hong Kong Polytechnic University)</p>
+        <p>Keynote speakers: Prof. Brian MacWhinney, Prof. Shaofeng Li</p>
+      </a>
+      <!-- TODO: Replace placeholder with the event page when available. -->
+      <a class="service-card linked-card event-card" href="#" aria-label="Event organization entry: Global English Education China Assembly">
+        <span class="entry-date">27/07/2024</span>
+        <h3><em>Global English Education China Assembly (Panel on EMI and Language Policy in the Greater Bay Area)</em></h3>
+        <p><strong>Panel Chair of Special Topic Committee</strong></p>
+        <p>Panel members: Prof. Zhisheng Wen, Prof. Yuen Yi Lo, Prof. Yawen Han</p>
+      </a>
+      <!-- TODO: Replace placeholder with the event page when available. -->
+      <a class="service-card linked-card event-card" href="#" aria-label="Event organization entry: Oxford-Hong Kong EMI Symposium 2023">
+        <span class="entry-date">06/12/2023 · Hong Kong</span>
+        <h3><em>Oxford-Hong Kong EMI Symposium 2023: Fostering collaboration</em></h3>
+        <p><strong>Member of Organizing Committee</strong></p>
+        <p>Jointly hosted by Faculty of Education (University of Hong Kong) and Department of Education (University of Oxford)</p>
+        <p>Keynote speakers: Prof. Guangwei Hu, Prof. Kristina Hultgren</p>
+      </a>
+      <!-- TODO: Replace placeholder with the event page when available. -->
+      <a class="service-card linked-card event-card" href="#" aria-label="Event organization entry: Oxford EMI Symposium 2021">
+        <span class="entry-date">09/12/2021 · UK</span>
+        <h3><em>Oxford EMI Symposium 2021: EMI in emerging contexts</em></h3>
+        <p><strong>Member of Organizing Committee</strong></p>
+        <p>Hosted by Department of Education (University of Oxford)</p>
+        <p>Keynote speakers: Prof. Jim McKinley, Prof. Heath Rose</p>
+      </a>
+      <!-- TODO: Replace placeholder with the event page when available. -->
+      <a class="service-card linked-card event-card" href="#" aria-label="Event organization entry: Oxford EMI Symposium 2019">
+        <span class="entry-date">26/06/2019 · UK</span>
+        <h3><em>Oxford EMI Symposium 2019: Where does EMI take us?</em></h3>
+        <p><strong>Member of Organizing Committee</strong></p>
+        <p>Hosted by Department of Education (University of Oxford)</p>
+        <p>Keynote speakers: Prof. David Lasagabaster, Prof. Yuen Yi Lo</p>
+      </a>
     </div>
   </section>
 
@@ -70,6 +174,6 @@
   </footer>
 </main>
 
-<script src="assets/site.js?v=11"></script>
+<script src="assets/site.js?v=13"></script>
 </body>
 </html>

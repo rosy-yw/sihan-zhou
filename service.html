@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Service · Sihan Zhou</title>
   <meta name="description" content="Service and professional activities of Sihan Zhou." />
-  <link rel="stylesheet" href="assets/style.css?v=11" />
+  <link rel="stylesheet" href="assets/style.css?v=14" />
 </head>
 <body class="page-service">
 <header class="site-header">
@@ -13,104 +13,118 @@
     <div class="brand">
       <a href="index.html">Sihan Zhou</a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="outreach.html">Outreach</a>
-      <a class="active" href="service.html">Service</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-top" href="index.html">Home</a>
+      <div class="nav-group">
+        <a class="nav-top" href="research.html">Research</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Research menu"></button>
+        <div class="dropdown-menu">
+          <a href="research.html#projects-grants">Projects &amp; Grants</a>
+          <a href="research.html#invited-presentations-talks">Invited Conference Presentations &amp; Talks</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="publications.html">Publications</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Publications menu"></button>
+        <div class="dropdown-menu">
+          <a href="publications.html#featured-publications">Featured High-impact Publications</a>
+          <a href="publications.html#selected-publications-by-topic">Selected Publications by Topic</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="teaching.html">Teaching</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Teaching menu"></button>
+        <div class="dropdown-menu">
+          <a href="teaching.html#courses-teaching">Courses Teaching</a>
+          <a href="teaching.html#supervision">Supervision</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="outreach.html">Outreach</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Outreach menu"></button>
+        <div class="dropdown-menu">
+          <a href="outreach.html#knowledge-transfer">Knowledge Transfer</a>
+          <a href="outreach.html#event-organization">Event Organization</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top active" href="service.html">Service</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Service menu"></button>
+        <div class="dropdown-menu">
+          <a href="service.html#professional-roles">Professional Roles</a>
+          <a href="service.html#selected-external-services">Selected External Services</a>
+          <a href="service.html#selected-internal-services">Selected Internal Services</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section" id="professional-roles">
     <div class="kicker">Service</div>
-    <h1>Professional service</h1>
-  </section>
-
-  <section class="section">
-    <h2>Editorial and journal service</h2>
+    <h1>Professional Roles</h1>
     <div class="service-list">
-      <article class="service-card with-mark">
+      <a class="service-card with-mark linked-card" href="https://onlinelibrary.wiley.com/toc/15457249/2026/60/2" target="_blank" rel="noopener noreferrer" aria-label="Professional role: Senior Associate Editor, TESOL Quarterly">
+        <img class="role-logo" src="assets/service/TESQ.webp" alt="TESOL Quarterly cover">
+        <div>
+          <span class="entry-date">2025&ndash;</span>
+          <h3>Senior Associate Editor, <em>TESOL Quarterly</em></h3>
+          <p>SSCI Q1 in Linguistics &amp; Education</p>
+        </div>
+      </a>
+      <a class="service-card with-mark linked-card" href="https://www.education.ox.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="Professional role: Honorary Research Fellow, University of Oxford">
+        <img class="role-logo contain-logo" src="assets/service/education-logo.png" alt="University of Oxford Department of Education logo">
+        <div>
+          <span class="entry-date">2024&ndash;</span>
+          <h3>Honorary Research Fellow, Department of Education, University of Oxford</h3>
+        </div>
+      </a>
+      <a class="service-card with-mark linked-card" href="https://www.sciencedirect.com/journal/system" target="_blank" rel="noopener noreferrer" aria-label="Professional role: Editorial Board Member, System">
         <img class="journal-cover service-cover" src="assets/journals/system.jpg" alt="System journal cover">
         <div>
+          <span class="entry-date">2024&ndash;</span>
           <h3>Editorial Board Member, <em>System</em></h3>
-          <p>Editorial board service for an international journal in educational technology and applied linguistics.</p>
-          <a href="https://www.sciencedirect.com/journal/system" target="_blank" rel="noopener noreferrer">Journal link</a>
+          <p>SSCI Q1 in Linguistics &amp; Education</p>
         </div>
-      </article>
-      <article class="service-card with-mark">
-        <img class="journal-cover service-cover" src="assets/journals/aila-review.png" alt="AILA Review cover">
+      </a>
+      <a class="service-card with-mark linked-card" href="https://www.hkeaa.edu.hk/" target="_blank" rel="noopener noreferrer" aria-label="Professional role: Member, Hong Kong Examinations and Assessment Authority Committee">
+        <img class="role-logo contain-logo" src="assets/service/HK Examinations and Assessment Authority Committee.svg" alt="Hong Kong Examinations and Assessment Authority logo">
         <div>
-          <h3>Guest Editor, Special Issue of <em>AILA Review</em></h3>
-          <p>Qualitative Research on Language Learning Strategies and Sources of Regulation, with Nathan Thomas and Jason Schneider.</p>
-          <a href="https://www.benjamins.com/catalog/aila.00059.tho" target="_blank" rel="noopener noreferrer">Journal link</a>
+          <span class="entry-date">2024&ndash;</span>
+          <h3>Member, Hong Kong Examinations and Assessment Authority Committee</h3>
         </div>
-      </article>
+      </a>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Institutional and professional roles</h2>
-    <div class="service-list">
-      <article class="service-card">
-        <h3>Deputy Coordinator, BA (English Studies)-BEd (English Language Education) Program, CUHK</h3>
-        <a href="https://www.fed.cuhk.edu.hk/~ede4343/" target="_blank" rel="noopener noreferrer">Program link</a>
-      </article>
-      <article class="service-card">
-        <h3>Honorary Research Fellow, University of Oxford</h3>
-        <a href="https://www.education.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford Department of Education</a>
-      </article>
-      <article class="service-card">
-        <h3>Co-Director, EMI-Language Policy Committee, Global English Education China Assembly</h3>
-        <a href="https://tesol.i21st.cn/2026/" target="_blank" rel="noopener noreferrer">Global English Education China Assembly</a>
-      </article>
-      <article class="service-card">
-        <h3>Swire Scholar, Swire Charitable Trust</h3>
-        <a href="https://www.swirecharitabletrust.org.uk" target="_blank" rel="noopener noreferrer">Swire Charitable Trust</a>
-      </article>
+  <section class="section" id="selected-external-services">
+    <h2>Selected External Service to Academic and Professional Bodies</h2>
+    <div class="service-list compact-service-list">
+      <article class="service-card"><h3>Invited book/journal/conference abstract reviewer (2021&ndash;)</h3></article>
+      <article class="service-card"><h3>Invited speaker at presentations/lectures/workshops</h3></article>
+      <article class="service-card"><h3>External PhD thesis examiner</h3></article>
+      <article class="service-card"><h3>External reviewer for RGC competitive grants</h3></article>
+      <article class="service-card"><h3>External reviewer for university program</h3></article>
+      <article class="service-card"><h3>Examiner for external academic competition</h3></article>
+      <article class="service-card"><h3>Advisor/Speaker for Knowledge Transfer projects</h3></article>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Research and community projects</h2>
-    <div class="service-list">
-      <article class="service-card">
-        <h3>English Subject Expert, Hong Kong Jockey Club 'AI for the Future' Project</h3>
-        <a href="https://cuhkjc-aiforfuture.hk/index.php/en/home/" target="_blank" rel="noopener noreferrer">AI for the Future</a>
-      </article>
-      <article class="service-card">
-        <h3>Researcher, EMI Oxford Research Group</h3>
-        <a href="https://www.emi.network" target="_blank" rel="noopener noreferrer">EMI Oxford Research Group</a>
-      </article>
-    </div>
-  </section>
-
-  <section class="section community-service">
-    <h2>Professional Community Services</h2>
-    <div class="service-list">
-      <article class="service-card">
-        <h3>Reviewer for grants and international journals</h3>
-        <p>Sihan Zhou has acted as a reviewer for RGC grant submissions, and for a number of SSCI-indexed international journals such as <em>System</em>, <em>Applied Linguistics</em>, <em>TESOL Quarterly</em>, <em>The Modern Language Journal</em>, <em>Studies in Second Language Learning and Teaching</em>, <em>Journal of English for Academic Purposes</em>, <em>International Journal of Bilingual Education and Bilingualism</em>, <em>Journal of Multicultural and Multilingual Development</em>, <em>RELC Journal</em>, <em>Language, Culture and Curriculum</em>, <em>Language &amp; Education</em>, <em>Current Issues in Language Planning</em>, <em>International Review of Applied Linguistics in Language Teaching</em>, <em>The Asia-Pacific Education Researcher</em>, <em>European Journal of Education</em>, <em>Higher Education</em>, etc.</p>
-      </article>
-      <article class="service-card">
-        <h3>Knowledge transfer activities</h3>
-        <p>In the past five years, Sihan Zhou has engaged in Knowledge Transfer activities to train school language teachers, develop language-related e-learning products, and coordinate symposiums and events to promote effective practices in language education.</p>
-        <ul class="service-details">
-          <li>July, 2023, 2024. Professional Development Workshop for 40 school teachers from Guangdong Province on the topic of "Task-based assessment in language learning", Centre for Language Education and Multiliteracies Research (CLEMR), CUHK, Hong Kong.</li>
-          <li>July, 2023. Professional Development Workshop for 40 school teachers from Guangdong Province on the topic of "Assessment as learning in English learning classrooms", Centre for Language Education and Multiliteracies Research (CLEMR), CUHK, Hong Kong.</li>
-          <li>June, 2023. Adjudicator for "Good People Good Deeds: English Writing Competition 2022-23" hosted by Tung Wah Group of Hospitals, Hong Kong.</li>
-          <li>June - December, 2023. Organizing committee member for Hong Kong-Oxford Joint 5th EMI Symposium 2023, University of Oxford &amp; University of Hong Kong, Hong Kong.</li>
-          <li>June - December, 2021. Organizing committee member for Oxford 4th EMI Symposium, University of Oxford, Oxford, UK.</li>
-          <li>June - December, 2019. Organizing committee member for Oxford 3rd EMI Symposium, University of Oxford, Oxford, UK.</li>
-          <li>Sept 2016 - May 2018. Knowledge Transfer Partnership (KTP) Associate for developing a digital and game-based English learning curriculum, University of Edinburgh, UK.</li>
-          <li>Sept 2016 - May 2018. Education Lead for WordPlay Media Ltd., Newcastle, UK.</li>
-          <li>May 2017 - May 2018. Teacher trainer for Xubo Education Technology Ltd., Hangzhou, China.</li>
-        </ul>
-        <a href="https://www.fed.cuhk.edu.hk/cri/faculty/prof-zhou-sihan/" target="_blank" rel="noopener noreferrer">CUHK source</a>
-      </article>
+  <section class="section" id="selected-internal-services">
+    <h2>Selected Service to University and College</h2>
+    <div class="service-timeline">
+      <article><span>2026&ndash;</span><p>Member, AI Ethics and Digital Literacy Committee, Chung Chi College</p></article>
+      <article><span>2025&ndash;</span><p>Member, Faculty Board of Education</p></article>
+      <article><span>2025</span><p>Interview Panelist, Scholarships for Balanced Education, Chung Chi College</p></article>
+      <article><span>2023&ndash;</span><p>Member, Scholarships Committee, Chung Chi College</p></article>
+      <article><span>2023&ndash;</span><p>Deputy Program Coordinator, BA (English Studies) and BEd (English Language Education/ELED Program</p></article>
+      <article><span>2023&ndash;</span><p>Admission Coordinator &amp; Interview Panelist, ELED Program</p></article>
+      <article><span>2023&ndash;</span><p>Member, ELED Program Committee &amp; Advisory Committee</p></article>
+      <article><span>2023&ndash;</span><p>Admission Interview Panelist, MA TESOL Program</p></article>
+      <article><span>2022&ndash;</span><p>Admission Interview Panelist, PGDE Program</p></article>
+      <article><span>2022&ndash;</span><p>Coordinator, Research Cluster Committee</p></article>
+      <article><span>Ongoing</span><p>PhD or EdD Internal Examiner/Annual Seminar Chair</p></article>
     </div>
   </section>
 
@@ -119,6 +133,6 @@
   </footer>
 </main>
 
-<script src="assets/site.js?v=11"></script>
+<script src="assets/site.js?v=14"></script>
 </body>
 </html>

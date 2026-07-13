@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Teaching · Sihan Zhou</title>
   <meta name="description" content="Teaching and supervision of Sihan Zhou." />
-  <link rel="stylesheet" href="assets/style.css?v=11" />
+  <link rel="stylesheet" href="assets/style.css?v=16" />
 </head>
 <body class="page-teaching">
 <header class="site-header">
@@ -13,28 +13,57 @@
     <div class="brand">
       <a href="index.html">Sihan Zhou</a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a class="active" href="teaching.html">Teaching</a>
-      <a href="outreach.html">Outreach</a>
-      <a href="service.html">Service</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-top" href="index.html">Home</a>
+      <div class="nav-group">
+        <a class="nav-top" href="research.html">Research</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Research menu"></button>
+        <div class="dropdown-menu">
+          <a href="research.html#projects-grants">Projects &amp; Grants</a>
+          <a href="research.html#invited-presentations-talks">Invited Conference Presentations &amp; Talks</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="publications.html">Publications</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Publications menu"></button>
+        <div class="dropdown-menu">
+          <a href="publications.html#featured-publications">Featured High-impact Publications</a>
+          <a href="publications.html#selected-publications-by-topic">Selected Publications by Topic</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top active" href="teaching.html">Teaching</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Teaching menu"></button>
+        <div class="dropdown-menu">
+          <a href="teaching.html#courses-teaching">Courses Teaching</a>
+          <a href="teaching.html#supervision">Supervision</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="outreach.html">Outreach</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Outreach menu"></button>
+        <div class="dropdown-menu">
+          <a href="outreach.html#knowledge-transfer">Knowledge Transfer</a>
+          <a href="outreach.html#event-organization">Event Organization</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="service.html">Service</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Service menu"></button>
+        <div class="dropdown-menu">
+          <a href="service.html#professional-roles">Professional Roles</a>
+          <a href="service.html#selected-external-services">Selected External Services</a>
+          <a href="service.html#selected-internal-services">Selected Internal Services</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section" id="courses-teaching">
     <div class="kicker">Teaching</div>
-    <h1>Teaching and supervision</h1>
-    <p class="lead">
-      Sihan Zhou teaches courses in second language assessment, English language curriculum, language testing, and English communication for university studies.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>Courses taught</h2>
+    <h1>Courses Teaching</h1>
     <div class="course-grid">
       <article class="course-card">
         <span>TESL 6503</span>
@@ -61,12 +90,31 @@
         <h3>English Communication for University Studies</h3>
       </article>
     </div>
+
   </section>
 
-  <section class="section">
-    <h2>Supervision interests</h2>
+  <section class="section teaching-gallery-section" aria-labelledby="photo-gallery-heading">
+    <div class="kicker">Teaching in practice</div>
+    <h2 id="photo-gallery-heading">Photo Gallery</h2>
+    <div class="gallery-shell teaching-gallery-shell">
+      <button class="gallery-arrow gallery-arrow-left" type="button" data-gallery-direction="-1" aria-label="Show previous teaching photo">&lt;</button>
+      <div class="classroom-gallery" data-gallery aria-label="Teaching photo gallery" tabindex="0">
+        <figure class="classroom-photo">
+          <img src="assets/gallery/teaching/teaching1.jpg" alt="Sihan Zhou teaching in a classroom" loading="lazy">
+        </figure>
+        <figure class="classroom-photo">
+          <img src="assets/gallery/teaching/teaching2.jpg" alt="Sihan Zhou participating in a teaching activity" loading="lazy">
+        </figure>
+      </div>
+      <button class="gallery-arrow gallery-arrow-right" type="button" data-gallery-direction="1" aria-label="Show next teaching photo">&gt;</button>
+    </div>
+  </section>
+
+  <section class="section" id="supervision">
+    <h2>Supervision</h2>
     <p>
-      Potential supervision topics include self-regulated language learning, listening development, English-medium instruction, and technology-enhanced language education.
+      Interested doctoral applicants are advised to email both their CV and proposal related to Sihan’s research areas and focuses.
+      <a class="supervision-email" href="mailto:sihanzhou@cuhk.edu.hk">sihanzhou@cuhk.edu.hk</a>
     </p>
   </section>
 
@@ -75,6 +123,6 @@
   </footer>
 </main>
 
-<script src="assets/site.js?v=11"></script>
+<script src="assets/site.js?v=16"></script>
 </body>
 </html>

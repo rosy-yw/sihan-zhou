@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About · Sihan Zhou</title>
   <meta name="description" content="About Sihan Zhou." />
-  <link rel="stylesheet" href="assets/style.css?v=11" />
+  <link rel="stylesheet" href="assets/style.css?v=13" />
 </head>
 <body class="page-about">
 <header class="site-header">
@@ -13,13 +13,49 @@
     <div class="brand">
       <a href="index.html">Sihan Zhou</a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="outreach.html">Outreach</a>
-      <a href="service.html">Service</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-top" href="index.html">Home</a>
+      <div class="nav-group">
+        <a class="nav-top" href="research.html">Research</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Research menu"></button>
+        <div class="dropdown-menu">
+          <a href="research.html#projects-grants">Projects &amp; Grants</a>
+          <a href="research.html#invited-presentations-talks">Invited Conference Presentations &amp; Talks</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="publications.html">Publications</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Publications menu"></button>
+        <div class="dropdown-menu">
+          <a href="publications.html#featured-publications">Featured High-impact Publications</a>
+          <a href="publications.html#selected-publications-by-topic">Selected Publications by Topic</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="teaching.html">Teaching</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Teaching menu"></button>
+        <div class="dropdown-menu">
+          <a href="teaching.html#courses-teaching">Courses Teaching</a>
+          <a href="teaching.html#supervision">Supervision</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="outreach.html">Outreach</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Outreach menu"></button>
+        <div class="dropdown-menu">
+          <a href="outreach.html#knowledge-transfer">Knowledge Transfer</a>
+          <a href="outreach.html#event-organization">Event Organization</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-top" href="service.html">Service</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open Service menu"></button>
+        <div class="dropdown-menu">
+          <a href="service.html#professional-roles">Professional Roles</a>
+          <a href="service.html#selected-external-services">Selected External Services</a>
+          <a href="service.html#selected-internal-services">Selected Internal Services</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -62,6 +98,6 @@
   </footer>
 </main>
 
-<script src="assets/site.js?v=11"></script>
+<script src="assets/site.js?v=13"></script>
 </body>
 </html>
