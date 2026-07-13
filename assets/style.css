@@ -1234,25 +1234,28 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
   background:#fff;
 }
 
-.service-cover{
-  width:78px;
-  height:104px;
-}
-
-.role-logo{
-  width:78px;
-  height:104px;
-  object-fit:cover;
-  align-self:start;
+.role-image{
+  display:block;
+  max-width:100%;
+  justify-self:center;
   border:1px solid var(--line);
-  border-radius:8px;
   background:#fff;
   box-shadow:0 8px 18px rgba(16,24,40,0.10);
 }
 
-.role-logo.contain-logo{
+.role-image--cover{
+  width:108px;
+  height:150px;
   object-fit:contain;
-  padding:8px;
+  border-radius:6px;
+}
+
+.role-image--logo{
+  width:132px;
+  height:88px;
+  padding:9px;
+  object-fit:contain;
+  border-radius:8px;
 }
 
 .journal-mark{
@@ -1285,6 +1288,19 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
   transform:translateY(-1px);
   border-color:rgba(91,102,81,0.26);
   box-shadow:0 12px 30px rgba(16,24,40,0.09);
+}
+
+.linked-name{
+  color:var(--accent);
+  font-weight:700;
+  border-bottom:1px solid rgba(91,102,81,0.42);
+  transition:color 160ms ease, border-color 160ms ease;
+}
+
+.outreach-card:hover .linked-name,
+.outreach-card:focus-visible .linked-name{
+  color:#414a3a;
+  border-bottom-color:currentColor;
 }
 
 .feature-pub.linked-card{
@@ -1637,8 +1653,10 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
 
 .service-card.with-mark{
   display:grid;
-  grid-template-columns:92px 1fr;
-  gap:16px;
+  grid-template-columns:142px minmax(0, 1fr);
+  gap:22px;
+  align-items:center;
+  min-height:182px;
 }
 
 .left-pills{
@@ -1855,9 +1873,25 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
 
   .grant-card,
   .feature-pub,
-  .service-card.with-mark,
   .event-feature{
     grid-template-columns:1fr;
+  }
+
+  .service-card.with-mark{
+    grid-template-columns:112px minmax(0, 1fr);
+    gap:16px;
+    min-height:150px;
+  }
+
+  .role-image--cover{
+    width:88px;
+    height:122px;
+  }
+
+  .role-image--logo{
+    width:104px;
+    height:72px;
+    padding:7px;
   }
 
   .society-timeline article{
