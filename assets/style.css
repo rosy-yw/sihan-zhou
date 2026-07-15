@@ -1838,7 +1838,7 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
   border-top:none;
 }
 
-.service-timeline span{
+.service-timeline article > span{
   color:var(--accent);
   font-weight:800;
 }
@@ -1846,6 +1846,29 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
 .service-timeline p{
   margin:0;
   color:var(--muted);
+}
+
+.entity-name{
+  font-weight:700;
+  text-decoration-line:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:0.2em;
+  text-decoration-skip-ink:auto;
+}
+
+.entity-name--journal{
+  color:#80623d;
+  text-decoration-color:rgba(128,98,61,0.62);
+}
+
+.entity-name--institution{
+  color:#47675e;
+  text-decoration-color:rgba(71,103,94,0.58);
+}
+
+.linked-card:hover .entity-name,
+.linked-card:focus-visible .entity-name{
+  text-decoration-thickness:2px;
 }
 
 .service-details{
