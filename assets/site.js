@@ -134,4 +134,32 @@
     const autoplay = Number(gallery.dataset.autoplay);
     if (autoplay > 0) window.setInterval(() => moveTo(activeIndex + 1), autoplay);
   });
+
+  // Publications topic accordions. A direct topic hash opens its panel.
+  const topicToggles = Array.from(document.querySelectorAll(".topic-toggle"));
+  const setTopicOpen = (toggle, isOpen) => {
+    const panelId = toggle.getAttribute("aria-controls");
+    const panel = panelId ? document.getElementById(panelId) : null;
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    if (panel) panel.hidden = !isOpen;
+  };
+
+  topicToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      setTopicOpen(toggle, toggle.getAttribute("aria-expanded") !== "true");
+    });
+  });
+
+  const openTopicFromHash = () => {
+    if (!window.location.hash) return;
+    const target = document.querySelector(window.location.hash);
+    const topic = target?.classList.contains("publication-topic")
+      ? target
+      : target?.closest(".publication-topic");
+    const toggle = topic?.querySelector(".topic-toggle");
+    if (toggle) setTopicOpen(toggle, true);
+  };
+
+  openTopicFromHash();
+  window.addEventListener("hashchange", openTopicFromHash);
 })();
