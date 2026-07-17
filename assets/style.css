@@ -213,7 +213,9 @@ main{ padding:24px 0 64px; }
   top:100%;
   left:50%;
   z-index:20;
+  width:max-content;
   min-width:240px;
+  max-width:min(430px, calc(100vw - 32px));
   padding:10px;
   border:1px solid var(--line);
   border-radius:10px;
@@ -238,9 +240,10 @@ main{ padding:24px 0 64px; }
   padding:8px 10px;
   border-radius:7px;
   color:var(--muted);
-  font-size:0.74rem;
-  letter-spacing:0.08em;
-  line-height:1.35;
+  font-size:0.88rem;
+  font-weight:600;
+  letter-spacing:0.1em;
+  line-height:1.45;
   text-transform:none;
   white-space:normal;
 }
@@ -1725,7 +1728,7 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
   margin-top:18px;
   display:grid;
   grid-auto-flow:column;
-  grid-auto-columns:minmax(260px, 36%);
+  grid-auto-columns:minmax(420px, 52%);
   gap:14px;
   overflow-x:auto;
   padding:2px 2px 12px;
@@ -2261,7 +2264,7 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
   }
 
   .classroom-gallery{
-    grid-auto-columns:minmax(240px, 84%);
+    grid-auto-columns:minmax(260px, 92%);
   }
 
   .dropdown-menu{
@@ -2333,11 +2336,13 @@ body.home[data-tone]{ --home-veil: rgba(248, 246, 240, 0.72); }
 
 /* 2026 editorial refinements */
 .dropdown-menu a{
-  font-size:0.78rem;
-  letter-spacing:0.06em;
+  font-size:0.88rem;
+  font-weight:600;
+  letter-spacing:0.1em;
 }
 
-body:not(.home) .section > h1{
+body:not(.home) .section > h1,
+.home .profile .name{
   margin-bottom:22px;
   font-size:2.35rem;
   line-height:1.14;
@@ -2345,6 +2350,15 @@ body:not(.home) .section > h1{
 
 body:not(.home) .section > h2,
 body:not(.home) .section-heading-row h2{
+  font-size:1.75rem;
+  line-height:1.2;
+}
+
+/* First content modules use the same title scale as their sibling modules. */
+#projects-grants > h1,
+#courses-teaching > h1,
+#knowledge-transfer > h1,
+#professional-roles > h1{
   font-size:1.75rem;
   line-height:1.2;
 }
@@ -2431,7 +2445,13 @@ body:not(.home) .section-heading-row h2{
 }
 
 #projects-grants .grant-list{
-  grid-template-columns:1fr;
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  gap:16px;
+}
+
+#projects-grants .grant-card{
+  width:100%;
 }
 
 .feature-pub{
@@ -2547,12 +2567,25 @@ body:not(.home) .section-heading-row h2{
 }
 
 @media (max-width: 620px){
-  body:not(.home) .section > h1{
+  .dropdown-menu a{
+    font-size:0.82rem;
+    letter-spacing:0.08em;
+  }
+
+  body:not(.home) .section > h1,
+  .home .profile .name{
     font-size:2rem;
   }
 
   body:not(.home) .section > h2,
   body:not(.home) .section-heading-row h2{
+    font-size:1.5rem;
+  }
+
+  #projects-grants > h1,
+  #courses-teaching > h1,
+  #knowledge-transfer > h1,
+  #professional-roles > h1{
     font-size:1.5rem;
   }
 
@@ -3087,4 +3120,46 @@ a.event-media:focus-visible{
     height:156px;
   }
 
+}
+
+/* British Council report: text-led editorial balance with a contained cover. */
+.outreach-showcase-card.outreach-showcase-card--report{
+  grid-template-columns:minmax(0, 1.35fr) minmax(220px, 0.65fr);
+}
+
+.outreach-showcase-card--report .outreach-visual{
+  display:grid;
+  place-items:center;
+  min-height:340px;
+  padding:22px;
+}
+
+.outreach-showcase-card--report .outreach-visual img{
+  width:min(100%, 240px);
+  height:auto;
+  min-height:0;
+  max-height:330px;
+  padding:0;
+  object-fit:contain;
+}
+
+@media (max-width: 860px){
+  .outreach-showcase-card.outreach-showcase-card--report{
+    grid-template-columns:1fr;
+  }
+
+  .outreach-showcase-card.outreach-showcase-card--report .outreach-content{
+    order:1;
+  }
+
+  .outreach-showcase-card.outreach-showcase-card--report .outreach-visual{
+    order:2;
+    min-height:0;
+    padding:20px;
+  }
+
+  .outreach-showcase-card--report .outreach-visual img{
+    width:min(100%, 220px);
+    max-height:300px;
+  }
 }
